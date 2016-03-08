@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="bicyclesharingcopy">
+		<class>com.mindfire.model.BiCycleTransfer</class>
+		<class>com.mindfire.model.BiCycle</class>
+		<class>com.mindfire.model.BookingTransaction</class>
+		<class>com.mindfire.model.Booking</class>
+		<class>com.mindfire.model.PickUpPoint</class>
+		<class>com.mindfire.model.ProofDetail</class>
+		<class>com.mindfire.model.RateGroup</class>
+		<class>com.mindfire.model.Role</class>
+		<class>com.mindfire.model.Transfer</class>
+		<class>com.mindfire.model.UserLog</class>
+		<class>com.mindfire.model.User</class>
+		<class>com.mindfire.model.VerificationToken</class>
+		<class>com.mindfire.model.WalletTransaction</class>
+		<class>com.mindfire.model.Wallet</class>
+	</persistence-unit>
+</persistence>
