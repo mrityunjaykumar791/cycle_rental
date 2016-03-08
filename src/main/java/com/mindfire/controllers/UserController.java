@@ -110,10 +110,13 @@ public class UserController {
 			session.setAttribute("token", verificationToken.getToken());
 			return new ModelAndView("redirect:/badUser.html");
 		}
-
-		user.setEnabled(true);
-		userService.saveRegisteredUser(user);
-		return new ModelAndView("redirect:/setPassword.html");
+		if(user.getEnabled()){
+			return new ModelAndView("redirect:/badUser2.html");
+		} else {
+			user.setEnabled(true);
+			userService.saveRegisteredUser(user);
+			return new ModelAndView("redirect:/setPassword.html");
+		}
 	}
 
 	@RequestMapping(value = "resendRegistrationToken", method = RequestMethod.GET)
